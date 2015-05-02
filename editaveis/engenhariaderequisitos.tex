@@ -1,20 +1,36 @@
 \chapter[Engenharia de Requisitos]{Engenharia de Requisitos}
-Na seção a seguir será dado uma pequena introdução dos três níveis de projeto do SAFe (Portfolio, Program, Team), e será dito um pouco sobre esses níveis no contexto de projeto do grupo 1. Certas adaptações foram feitas com base nas características dos integrantes de ambos os grupos (Requisitos e MPR). Na seção seguinte será falado sobre os papeis principais do SAFe no contexto do grupo. Certos papeis foram retirados (por serem julgados como desnecessários para o contexto do projeto), e, portanto, não serão citados nem explicados. Papeis utilizados serão explicados, e, caso eles sejam alterados para que funcionem de maneira diferente à referida na bibliografia, essas alterações serão explicadas e justificadas.
+Na seção a seguir será dada uma pequena introdução dos três níveis de projeto do SAFe (Portfolio, Program, Team), e será dito um pouco sobre esses níveis no contexto de projeto do grupo 1. Certas adaptações foram feitas com base nas características dos integrantes de ambos os grupos (Requisitos e MPR). Então, na seção seguinte (\emph{Papéis}) será falado sobre os papeis principais do SAFe no contexto do grupo. Certos papeis foram retirados (por serem julgados como desnecessários para o contexto do projeto), e, portanto, não serão citados nem explicados. Papeis utilizados serão explicados, e, caso eles sejam alterados para que funcionem de maneira diferente à referida na bibliografia, essas alterações serão explicadas e justificadas.
 
 \section{Scaled Agile Framework}
 \subsection{Nível de Portfólio}
-Responsável pelos artefatos \emph{epics} e \emph{investiment themes}, este nível de projeto traz os requisitos com maior nível de abstração dentre os três níveis. Contém um tipo de time (\emph{portfolio management team}), tem seu próprio backlog (\emph{portfolio backlog}), e apresenta os conceitos de \emph{portfolio vision} e de \emph{architectural runway} \cite[p. 227-228]{safe001}. No contexto do grupo 1 esse nível de projeto não será utilizado, pois julga-se o tamanho do projeto como pequeno, fazendo-se desnecessário a utilização desse nível (ele costuma ser utilizado para grandes projetos, e a não utilização desse nível não prejudicará a qualidade do processo).
+\begin{figure}[h]
+  \centering
+  \caption{Nível de Portfólio no SAFe - \cite[p. 44]{safe001}}
+  \includegraphics[width=400px, scale=0.5]{figuras/PortfolioLevel.ps}
+\end{figure}
+
+Responsável pelos artefatos \emph{epics} e \emph{investiment themes}, este nível de projeto traz os requisitos com maior nível de abstração dentre os três níveis. Contém um tipo de time (\emph{portfolio management team}), costuma ter seu próprio backlog (\emph{portfolio backlog}), e apresenta os conceitos de \emph{portfolio vision} e de \emph{architectural runway} \cite[p. 227-228]{safe001}. No contexto do grupo 1 esse nível de projeto será bastante customizado, pois julga-se o tamanho do projeto como pequeno, fazendo-se desnecessário a utilização de certos papéis e certos conceitos (costumam ser utilizados para grandes projetos, e a não utilização de tais não prejudicará a qualidade do processo). Ao invés de se usar o \emph{portfolio backlog}, os épicos entre outros insumos nascidos nesse nível serão armazenados no \emph{program backlog}. Essa escolha foi feita pois o épico ocorre em um nível muito macro para o nível do projeto, onde o grupo voltaria a este possível \emph{backlog} pouquíssimas vezes durante o projeto. Logo preferiu uni-lo ao \emph{backlog} de Nível de Programa, deixando um papel cuidando de ambos.
 
 \subsection{Nível de Programa}
-Esse nível tem como principais objetivos manter a visão (Documento de Visão), gerenciar a \emph{release}, gerenciar a qualidade (integrando os resultados obtidos pelos times, e garantindo que os padrões de qualidade, performance, entre outros, estão sendo assegurados), fazer o \emph{deploy} do sistema, gerenciar recursos (ajustando prazo e gastos), e eliminar possíveis impedimentos (serão os facilitadores) \cite[p. 63-64]{safe001}. No contexto do grupo 1, os integrantes de Requisitos desenvolverão as \emph{features} e o Documento de Visão, que só surgem graças aos inputs fornecidos pelos integrantes de MPR.
+\begin{figure}[h]
+  \centering
+  \caption{Nível de Programa no SAFe - \cite[p. 39]{safe001}}
+  \includegraphics[width=400px, scale=0.5]{figuras/ProgramLevel.ps}
+\end{figure}
+Esse nível tem como principais objetivos manter a visão (Documento de Visão), gerenciar a \emph{release}, gerenciar a qualidade (integrando os resultados obtidos pelos times, e garantindo que os padrões de qualidade, performance, entre outros, estão sendo assegurados), fazer o \emph{deploy} do sistema, gerenciar recursos (ajustando prazo e gastos), e eliminar possíveis impedimentos (serão os facilitadores) \cite[p. 63-64]{safe001}. No contexto do grupo 1, os integrantes de Requisitos fornecerão dados para a escrita das \emph{features} (principalmente sob o papel de PM), os alunos escreverão as features e as documentarão no Documento de Visão. Como já dito, haverá o \emph{program backlog}, onde serão armazenadas \emph{features}, épicos, entre outras coisas.
 
 \subsection{Nível de Time}
-A unidade básica de trabalho para este nível é a \emph{estória de usuário}. O objetivo deste nível é definir, construir e testar as estórias de usuário no escopo da iteração, afim de se concluir mais partes do produto final \cite[p. 47-48]{safe001}. No contexto do grupo 1, somente os alunos de Requisitos fazem parte do Nível de Time, e farão todo o processo de alimentação do \emph{backlog} de time (com base nas \emph{features} desenvolvidas no Nível de Programa), processo de planejamento da sprint, priorização das estórias com base no WJDF, desenvolverão e testarão as soluções (com base nos critérios de aceitação).
+\begin{figure}[h]
+  \centering
+  \caption{Nível de Time no SAFe - \cite[p. 34]{safe001}}
+  \includegraphics[width=400px, scale=0.5]{figuras/TeamLevel.ps}
+\end{figure}
+A unidade básica de trabalho para este nível é a \emph{estória de usuário}. O objetivo deste nível é definir, construir e testar as estórias de usuário no escopo da iteração, afim de se concluir mais partes do produto final \cite[p. 47-48]{safe001}. No contexto do grupo 1, os alunos de MPR terão o papel de \emph{product owner}, fornecendo os insumos necessários para a escrita das estórias. Os alunos de Requisitos escreverão as estórias e farão todo o processo de alimentação do \emph{backlog} de time, processo de planejamento da sprint (serão os \emph{Scrum Masters}), priorização das estórias com base no WJDF, desenvolverão e testarão as soluções (com base nos critérios de aceitação).
 
 \section{Papéis}
 Um papel define comportamentos e responsabilidades de um indivíduo ou de um grupo de indivíduos que trabalham juntos como um time \cite[p. 61-65]{kruchten001}. O corportamento é expresso em termos de atividades que o papel pratica, e, cada papel é associado a um conjunto de atividades. No SAFe existem diferentes papéis para os diferentes níveis do sistema. No Nível de Portfólio vão haver, principalmente, papéis que irão interagir com os épicos e temas de investimento, no Nível de Programa, papéis que irão interagir com as \emph{features}, e, no Nível de Time, papéis que irão interagir com estórias de usuário.
 
-Nesta seção será dada uma breve definição de papeis que serão utilizados, e quem representa este papel no contexto do grupo 1.
+Nesta seção será dada uma breve definição de papeis que serão utilizados, justificativas e explicações para papeis customizados, e quem representa este papel no contexto do grupo 1.
 
 % \subsection{Papéis no Nível de Portfólio}
 % \subsubsection{Epic Owner}
@@ -26,28 +42,26 @@ Nesta seção será dada uma breve definição de papeis que serão utilizados, 
 \subsection{Papéis no Nível de Programa}
 
 \subsubsection{Product Manager}
-Responsável por entender as necessidades do cliente, documentar, priorizar e validar requisitos (no nível de \emph{feature}), gerenciar mudanças, entre outras coisas \cite[p. 283-287]{safe001}. No contexto do grupo 1, o Gerente do Produto (\emph{product manager}, PM) seriam os alunos de Requisitos.
+Responsável por entender as necessidades do cliente, documentar, priorizar e validar requisitos (no nível de \emph{feature}), gerenciar mudanças, entre outras coisas \cite[p. 283-287]{safe001}. No contexto do grupo 1, o Gerente do Produto (\emph{product manager}, PM) será fortemente customizado. Será o responsável por entender as necessidades do cliente e transferir esse conhecimento adquirido para a equipe quem escreverá as \emph{features}, e, principalmente, ser o fiscalizar o trabalho dos \emph{product owners}. Não cuidará do \emph{program backlog} (diferente do sugerido pela bibliografia). Todas essas mudanças ocorreram para poder adaptar o papel de PM ao máximo para integrantes da disciplina de MPR. As atividades mais ligadas aos alunos de Requisitos (escrever a \emph{feature}, cuidar do \emph{program backlog}, validar requisitos) ficarão com outros papeis, restritos aos alunos de Requisitos.
 
 \subsubsection{Release Management}
-Consistindo do Product Manager e do Release Train Engineer, o papel de Release Management é responsavel por comunicar o \emph{status} da release aos \emph{stakeholders}, coordenar com a gerência do produto e gerência de marketing as comunicações internas e externas, validar a qualidade relevante do produto de acordo com critérios, prover a autorização final da \emph{release}, ajudar a adptar e inspecionar o processo de \emph{release}, entre outras coisas \cite{safesite001}.
-No contexto do grupo 1, o Release Management será feito por quem atua no papel de Product Manager, no caso, os alunos de Requisitos, mas será um papel flutuante, onde cada semana um aluno do grupo terá o papel de /emph{release manager}.
+Consistindo do Product Manager e do Release Train Engineer, o papel de Release Management é responsavel por comunicar o \emph{status} da release aos \emph{stakeholders}, coordenar com a gerência do produto e gerência de marketing as comunicações internas e externas, validar a qualidade relevante do produto de acordo com critérios, prover a autorização final da \emph{release}, ajudar a adaptar e inspecionar o processo de \emph{release}, entre outras coisas \cite{safesite001}.
+No contexto do grupo 1, o Release Management será feito somente por quem atua no papel de \emph{Release Train Engineer}, no caso, os alunos de Requisitos. O papel não será compartilhado com os alunos de MPR pois, como já dito, pratica atividades com mais relação com a disciplina de Requisitos. Será um papel flutuante, onde cada semana um aluno do grupo terá o papel de ser /emph{release manager}.
 
 \subsubsection{Business Owners}
-Pequeno grupo de stakeholders de grande confiança, que dispõe de capacidade de administração, responsáveis pela gestão, qualidade, implantação e desenvolvimento de software \cite{safesite001}. No contexto do projeto serão os alunos de Requisitos.
+Pequeno grupo de \emph{stakeholders} de grande confiança, que dispõe de capacidade de administração, responsáveis pela gestão, qualidade, implantação e desenvolvimento de software \cite{safesite001}. No contexto do projeto, diferente da bibliografia, eles não serão responsáveis pelo desenvolvimento e implantação do \emph{software}, e será praticado pelos alunos de MPR.
 
 \subsubsection{Release Train Engineer}
-\subsubsection{System Architect}
 \subsubsection{UX}
 \subsubsection{Shared Resources}
 
 \subsection{Papéis no Nível de Time}
-Neste nível somente aparecerão integrantes da parte de Requisitos. Os papeis interagem principalmente com as estórias de usuário, e não serão completamente fixos durante o projeto.
 
 \subsubsection{Product Owner}
-Responsável por representar o interesse de todos os envolvidos no projeto, faz parte do time e esta junto no dia-a-dia dos desenvolvedores e testadores, elaborando as estórias de usuário e ajudando o time a alcançar seus objetivos \cite[p. 47-48]{safe001}. No contexto do grupo 1, o \emph{product owner} será todos os alunos de Requisitos.
+Responsável por representar o interesse de todos os envolvidos no projeto, faz parte do time e esta junto no dia-a-dia dos desenvolvedores e testadores, elaborando as estórias de usuário e ajudando o time a alcançar seus objetivos \cite[p. 47-48]{safe001}. No contexto do grupo 1, o \emph{product owner} não escreverá as estórias nem cuidará do \emph{team backlog}. Estará somente com as funções de representar interesses, fazer parte do time e fornecer insumos para a elaboração das estórias.
 
 \subsubsection{Scrum Master}
-É responsável por facilitar o progresso do time (ajudando assim a se alcançar o objetivo final), liderar os esforços do time, reforçar as regras do processo ágil e eliminar impedimentos \cite[p. 47-48]{safe001}. No contexto do grupo 1, o papel de \emph{Scrum Master} irá flutuar durante o projeto, e será escolhido um integrante do grupo de requisitos para ser \emph{Scrum Master} a cada sprint. Essa rotatividade irá fazer com que todos os integrantes aprendam a ser um \emph{Scrum Master}, e, só é necessário um por sprint.
+É responsável por facilitar o progresso do time (ajudando assim a se alcançar o objetivo final), liderar os esforços do time, reforçar as regras do processo ágil e eliminar impedimentos \cite[p. 47-48]{safe001}. No contexto do grupo 1, o papel de \emph{Scrum Master} irá flutuar durante o projeto, e será escolhido um integrante do grupo de Requisitos para ser \emph{Scrum Master} a cada sprint. Essa rotatividade irá fazer com que todos os integrantes aprendam a ser um \emph{Scrum Master}, e, só é necessário um por \emph{sprint}.
 
 \subsubsection{Desenvolvedores e Testadores}
-Responsáveis por desenvolverem e testarem as estórias de usuário. No contexto do grupo 1, todos os integrantes de Requisitos farão parte desse papel, sendo assim responsáveis pelo desenvolvimento da solução final e por testarem as estórias.
+Responsáveis por desenvolverem e testarem as estórias de usuário. No contexto do grupo 1, todos os integrantes de Requisitos farão parte desse papel, e também será responsável por escrever as estórias de usuário. Este papel inda será responsável pelo desenvolvimento da solução final e por testar as estórias.
