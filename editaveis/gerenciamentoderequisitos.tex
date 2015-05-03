@@ -22,9 +22,36 @@ A nomenclatura utilizada será uma concatenação entre prefixo (mostrados abaix
 \end{tabular}
 
 \section{Atributos de Requisitos}
-Requisitos, assim como objetos do mundo real, possuem atributos que os descrevem. Um carro, por exemplo, tem determinada potência, consome determinada quantidade de combustível, etc. Os requisitos são da mesma forma: apresentam atributos que os descrevem \cite{tel006}
+Requisitos, assim como objetos do mundo real, possuem atributos que os descrevem. Um carro, por exemplo, tem determinada potência, consome determinada quantidade de combustível, etc. Os requisitos são da mesma forma: apresentam atributos que os descrevem \cite{tel006}.
 
-Existem diversas maneiras de se analisar qual atributo deve receber maior prioridade. No contexto deste projeto, será utilizado o \emph{High Delay Cost First} em conjunto com o \emph{WSJB - Weighted Shortest Job First}, também sugerido por \cite{safe001}. O \emph{High Delay Cost First} consiste em se dar prioridade as \emph{features} que apresentam preço maior a cada atraso, enquanto o \emph{WSJB} consiste em se dar prioridade as \emph{features} que necessitam de menos esforço, mas que punem maior a cada atraso. Os dois se complementam, e no final das contas se faz a feature com o maior \emph{weight} (peso), que é dado pela fórmula \emph{Peso = Custo do atraso / Esforço} \cite[p. 266]{safe001}.
+Existem diversas maneiras de se analisar qual requisito deve receber maior prioridade, e isso quase sempre é feito levando em consideração seus atributos. No contexto deste projeto, será utilizado o \emph{High Delay Cost First} em conjunto com o \emph{WSJB - Weighted Shortest Job First}, também sugerido por \cite{safe001}. O \emph{High Delay Cost First} consiste em se dar prioridade as \emph{features} que apresentam maior penalização a cada atraso, enquanto o \emph{WSJB} consiste em se dar prioridade as \emph{features} que necessitam de menos esforço, mas que punem maior a cada atraso. Os dois se complementam, e no final das contas se faz a feature com o maior \emph{weight} (peso), que é dado pela fórmula \emph{Peso = Custo do atraso / Esforço} \cite[p. 266]{safe001}.
 
-Sendo assim, devemos ter como atributos de requisitos pelo menos os necessários para utilizar o HDCF e o WSJF. Eles são: \emph{esforço, dificuldade, custo, tempo, prioridade}.
+Sendo assim, devemos ter como atributos de requisitos pelo menos os necessários para utilizar o HDCF e o WSJF. Eles são: \emph{esforço, dificuldade, custo, tempo, prioridade}. Mas, em conjunto, também utilizaremos alguns atributos sugeridos por \cite{tel006}.
 
+Sendo assim, os atributos de requisitos utilizados pelo grupo 1 serão:
+\begin{itemize}
+  \item Fonte: De onde este requisito é derivado? Pessoa, documento, outro requisito, etc.
+  \item Prioridade: Este requisito tem prioridade alta, média ou baixa?
+  \item Comentários: Comentários de quem documentou tal requisito.
+  \item Status: Condição atual do requisito (concluído, não começado, ou em progresso).
+  \item Risco: Qual o risco de determinado requisito durante sua implantação? Podendo ser alto, médio ou baixo.
+  \item Prazo: Até quando tal requisito deve estar pronto?
+  \item Nível de teste: Qual o nível de teste de determinado requisito? Poderá ser nulo, médio, ou suficiente.
+  \item Esforço: Quanto esforço é necessário para se concluir determinado requisito? Poderá ser alto, médio ou baixo.
+  \item Custo do atraso: Quão grande é a punição por atraso de determinado requisito? Poderá ser alto, médio ou baixo.
+\end{itemize}
+
+Na fórmula citada acima (WSJB), será assumido valor 3 para alto, 2 para médio e 1 para baixo para os atributos correspodentes. Exemplo: Um atributo com custo do atraso alto e esforço médio:
+
+\begin{equation}
+  Peso = C / E = 3/2 = 1.5
+\end{equation}
+  \emph{Onde: C = Custo do atraso, E = Esforço.}
+
+Contra um requisito com custo do atraso baixo e esforço alto:
+
+\begin{equation}
+  Peso = 1/3 = 0.3333
+\end{equation}
+
+Nesse caso, o segundo requisito seria implementado primeiro, pois apresenta maior peso.
