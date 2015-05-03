@@ -25,7 +25,7 @@ Esse nível tem como principais objetivos manter a visão (Documento de Visão),
   \caption{Nível de Time no SAFe - \cite[p. 34]{safe001}}
   \includegraphics[width=400px, scale=0.5]{figuras/TeamLevel.ps}
 \end{figure}
-A unidade básica de trabalho para este nível é a \emph{estória de usuário}. O objetivo deste nível é definir, construir e testar as estórias de usuário no escopo de uma \emph{sprint}, afim de se concluir mais partes do produto final \cite[p. 47-48]{safe001}. No contexto do grupo 1, os alunos de MPR terão o papel de \emph{product owner}, fornecendo os insumos necessários para a escrita das estórias, que serão escritas em conjunto entre PO e desenvolvedores. Aleḿ disso, os alunos de Requisitos farão todo o processo de alimentação do \emph{backlog} de time, processo de planejamento da \emph{sprint} (serão os \emph{Scrum Masters}), priorização das estórias com base no WSJF, desenvolverão e testarão as soluções (com base nos critérios de aceitação).
+A unidade básica de trabalho para este nível é a \emph{estória de usuário}. O objetivo deste nível é definir, construir e testar as estórias de usuário no escopo de uma \emph{sprint}, afim de se concluir mais partes do produto final \cite[p. 47-48]{safe001}. No contexto do grupo 1, os alunos de MPR terão o papel de \emph{product owner}, fornecendo os insumos necessários para a escrita das estórias, que serão escritas em conjunto entre PO e desenvolvedores. Além disso, os alunos de Requisitos farão todo o processo de alimentação do \emph{backlog} de time, processo de planejamento da \emph{sprint} (serão os \emph{Scrum Masters}), priorização das estórias com base no WSJF, desenvolverão e testarão as soluções (com base nos critérios de aceitação).
 
 \section{Papéis}
 Um papel define comportamentos e responsabilidades de um indivíduo ou de um grupo de indivíduos que trabalham juntos como um time \cite[p. 61-65]{kruchten001}. O corportamento é expresso em termos de atividades que o papel pratica, e, cada papel é associado a um conjunto de atividades. No SAFe existem diferentes papéis para os diferentes níveis do sistema. No Nível de Portfólio vão haver, principalmente, papéis que irão interagir com os épicos e temas de investimento, no Nível de Programa, papéis que irão interagir com as \emph{features}, e, no Nível de Time, papéis que irão interagir com estórias de usuário.
@@ -34,7 +34,7 @@ Nesta seção será dada uma breve definição de papeis que serão utilizados, 
 
 \subsection{Papéis no Nível de Portfólio}
 \subsubsection{Epic Owner}
-Responsável por definir e analisar o trabalho que será seguido no épico \cite[p. 418-419]{safe001}. No contexto do grupo 1, afim de não descaracterizar a estrutura do SAFe, este papel terá o papel de gerenciar o Nível de Portfólio. Sendo ele o responsável pelos épicos.
+Responsável por definir e analisar o trabalho que será seguido no épico \cite[p. 418-419]{safe001}. No contexto do grupo 1, afim de não descaracterizar a estrutura do SAFe, este papel terá o papel de gerenciar o Nível de Portfólio e de ser o responsável pelos épicos.
 
 % \subsubsection{Enterprise Architect}
 % Responsável por manter um alto nível/visão holística da empresa e das iniciativas de desenvolvimento, participa na estratégia de construir e manter o \emph{Architectural Runway}, entender os temas estratégicos, dirigir o \emph{Architectural Epic Kanban} entre outras tarefas \cite{safesite001}.
@@ -65,3 +65,25 @@ Responsável por representar o interesse de todos os envolvidos no projeto, faz 
 
 \subsubsection{Desenvolvedores e Testadores}
 Responsáveis por desenvolverem e testarem as estórias de usuário. No contexto do grupo 1, todos os integrantes de Requisitos farão parte desse papel, e também será responsável por escrever as estórias de usuário e os critérios de aceitação. Este papel ainda será responsável pelo desenvolvimento da solução final e por testar as estórias.
+
+
+\section{Atividades}
+Serão detalhadas nessa seção o conjunto de atividades a serem feitas durante o projeto, e quem está envolvido na atividade.
+
+\begin{itemize}
+  \item Elicitar requisitos com o cliente: no contexto do grupo 1, atividade feita pelo \emph{epic owner} (Requisitos) e cliente (MPR), consiste em entender de maneira macro o contexto e as necessidades do projeto.
+  \item Analisar resultados da elicitação: Atividade feita pelos \emph{epic owners}, consiste em se analisar os insumos fornecidos pelo cliente na atividade anterior, buscando-se soluções plausíveis e pontos de vista diferentes.
+  \item Negociação com o cliente dos resultados levantados: feita entre \emph{epic owner} e cliente, consiste em expor os pontos de vista descobertos na análise, tentando encontrar um ponto comum entre a visão do cliente e da equipe.
+  \item Documentar critérios e requisitos: documentar de maneira formal as necessidades e descrições necessárias no projeto conseguidos na negociação, tudo em um nível bem macro. Feito pelo \emph{epic owner}, guiará a visão do épico.
+  \item Identificar \emph{features}: consiste em identificar as possíveis \emph{features} do sistema. Feita em conjunto entre o \emph{Product Owner} (que, como já dito, no contexto do grupo 1 terá as tarefas do PM) e o RTE (alunos de Requisitos), será salva no \emph{backlog} de programa.
+  \item Propor e escrever features: com as possíveis \emph{features} identificadas, se chega a um ponto comum se tal \emph{feature} deve estar presente ou não. Se sim, serão escritas e salvas. Feito em conjunto entre o PO e o RTE.
+  \item Documentar \emph{features} no Documento de Visão: Feito pelo RTE (alunos de Requisitos), consiste em documentar as \emph{features} levantadas no Documento de Visão.
+  \item Preencher \emph{backlog} de programa: consiste em documentar o conjunto de \emph{features} disponíveis no \emph{backlog} de programa, dando assim uma melhor visão para o time de qual solução pode ser implementada em determinado momento. Feita pelo Release Manager.
+  \item Planejar \emph{release}: consiste em definir quais \emph{features} serão implementadas na \emph{release}, períodos, visões, etc. Feita em conjunto entre os papéis de Release Manager, PO e RTE.
+  \item Refinamento do \emph{backlog} de programa: Consiste principalmente em dizer o estado atual de cada \emph{feature} que deve ser implementada na \emph{release} atual. Tarefa feita pelo Release Manager.
+  \item Escrever estórias de usuário: consiste em documentar as estórias de usuário advindas de uma determinada \emph{feature}. Feita em conjunto entre PO, Desenvolvedores e Scrum Master.
+  \item Alimentar \emph{backlog} de time: consiste em documentar e armazenar o conjunto de estórias no backlog, garantindo também sua rastreabilidade. Feito pelo Scrum Master.
+  \item Planejar \emph{sprint}: Feito em conjunto entre PO, Desenvolvedores e Scrum Master, consiste em planejar o que será implementado na \emph{sprint} seguinte, quem fica com determinada tarefa, pontos falhos da \emph{sprint} passada, etc.
+  \item Desenvolver e testar estórias: tarefa feita pelos desenvolvedores e testadores, consiste em desenvolver determinada estória de usuário, testar e validar com base nos critérios de aceitação.
+  \item Criar e entregar \emph{build}: Feita pelos desenvolvedores, consiste em empacotar o desenvolvimento das estórias feitas numa determinada sprint, transformar em produto, e entregar este incremento ao usuário.
+\end{itemize}
