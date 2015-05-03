@@ -1,11 +1,11 @@
 
 \chapter[Tópicos de Gerenciamento de Requisitos]{Tópicos de Gerenciamento de Requisitos}
 \section{Rastreabilidade de Requisitos}
-A Rastreabilidade de Requisitos (descrever, mostrar e acompanhar a vida de um requisito nos sentidos \emph{forward-to} e \emph{forward-from} \cite{garcia001}) é tido como uma das soluções para o problema da dessincronização entre \emph{software} e seus requisitos, sendo que a solução desse problema é quase que uma exigência básica da industria de desenvolvimento de \emph{software} atual \cite{leal001}. Faz parte de uma \emph{Specific Practice} da área de processo \emph{Manage Requirements}, do CMMI. É divida entre \emph{forward-to} (itens que derivam de um requisito \emph{x}) e \emph{forward-from} (itens que são derivados de um requisito \emph{x}).
+A Rastreabilidade de Requisitos (descrever, mostrar e acompanhar a vida de um requisito nos sentidos \emph{forward-to} e \emph{forward-from} \cite{garcia001}) é tido como uma das soluções para o problema da dessincronização entre \emph{software} e seus requisitos, sendo que a solução desse problema é quase que uma exigência básica da industria de desenvolvimento de \emph{software} atual \cite{leal001}. Faz parte de uma \emph{Specific Practice} da área de processo \emph{Manage Requirements} do CMMI. É divida entre \emph{forward-to} (itens que derivam de um requisito \emph{x}) e \emph{forward-from} (itens que são derivados de um requisito \emph{x}).
 
 Evidentemente que a Rastreabilidade de Requisitos muda de abordagem para abordagem. Será mostrada então o formato de rastreabilidade do grupo 1, levando em consideração que o framework de abordagem utilizado é o SAFe.
 
-Primeiro, é lembrado que do tema de investimento será derivado o épico. Um épico pode ser classificado em arquitetural ou de negócio, e dele derivarão features. Das features serão derivadas estórias de usuário, que delas (as estórias de usuário) derivam tarefas e, no nosso contexto, testes funcionais.
+Primeiro, é lembrado que do tema de investimento será derivado o épico. Um épico pode ser classificado em arquitetural ou de negócio, e dele derivarão \emph{features}. Das \emph{features} serão derivadas estórias de usuário, que delas (as estórias de usuário) derivam tarefas e, no nosso contexto, testes funcionais.
 
 A nomenclatura utilizada será uma concatenação entre prefixo (mostrados abaixos) e sufixos (número do índice do item). Lista de prefixos utilizados:
 
@@ -22,3 +22,5 @@ A nomenclatura utilizada será uma concatenação entre prefixo (mostrados abaix
 \end{tabular}
 
 \section{Atributos de Requisitos}
+
+Existem diversas maneiras de se analisar qual atributo deve receber maior prioridade. No contexto deste projeto, será utilizado o \emph{High Delay Cost First} em conjunto com o \emph{WSJB - Weighted Shortest Job First}, também sugerido por \cite{safe001}. O \emph{High Delay Cost First} consiste em se dar prioridade as \emph{features} que apresentam preço maior a cada atraso, enquanto o \emph{WSJB} consiste em se dar prioridade as \emph{features} que necessitam de menos esforço, mas que punem maior a cada atraso. Os dois se complementam, e no final das contas se faz a feature com o maior \emph{weight}, que é dado pela fórmula \emph{Weight = Custo do atraso / Esforço} \cite[p. 266]{safe001}.
