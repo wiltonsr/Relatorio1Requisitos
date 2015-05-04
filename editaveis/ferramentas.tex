@@ -8,9 +8,9 @@ Assim sendo, foram inspecionadas mais a fundo três ferramentas de gerenciamento
 
 Embora a utilização de uma ferramenta instalável em um servidor pudesse ser uma opção alternativa que forneceria os mesmos benefícios descritos acima, decidiu-se que o esforço e tempo demandado para a instalação e configuração não traria benefícios suficientes, ainda mais considerando o contexto do trabalho.
 
-Outro fator fundamental foi a compatibilidade com a metodologia adotada pela equipe.
+Outro fator fundamental observado foi a compatibilidade com a metodologia adotada pela equipe.
 
-Sendo assim, as ferramentas testadas serão apresentadas uma a uma, contemplando suas características, e, ao final da apresentação das ferramentas, será mostrada a decisão final e a justificativa.
+Sendo assim, as ferramentas testadas serão apresentadas uma a uma, contemplando suas características, e, ao final da apresentação das ferramentas, será mostrada a decisão final com justificativa.
 
 \section{Ferramenta 1 - Jama}
 \begin{itemize}
@@ -18,8 +18,9 @@ Sendo assim, as ferramentas testadas serão apresentadas uma a uma, contemplando
   \item Suporte a múltiplas equipes e papéis
   \item Importação de dados (doc/docx, xls/xlsx, xml, csv, arquivo de exportação do IBM Rational Doors)
   \item Impressão e exportação dos dados (doc, xls)
-  \item Suporte nativo a: releases, sprints, épicos, estórias de usuário, pontos da estória, cenários de uso, e casos de teste
+  \item Suporte nativo a: features, releases, sprints, épicos, estórias de usuário, pontos da estória, cenários de uso, e casos de teste
   \item Rastreabilidade dos requisitos
+  \item Implementação nativa de alguns atributos de requisitos
   \item Integração com outros serviços
 \end{itemize}
 
@@ -27,9 +28,23 @@ O Jama possui uma interface agradável, de baixa curva de aprendizagem, e com bo
 
 O padrão de criação de requisitos é baseado em campos de formulários e em modelos pré-definidos de documentos de texto que permitem uma flexibilização muito grande em sua criação, sendo bastante útil quando se quer seguir um padrão próprio ou alternativo na criação dos requisitos.
 
-A ferramenta ainda apresenta um boa rastreabilidade dos requisitos, relacionando os épicos com as estórias de usuários e com os casos de testes, funcionando em ambos os sentidos (ida e volta).
+A ferramenta apresenta uma excelente capacidade de rastreabilidade relacionando os épicos com as estórias de usuários e com os casos de testes, funcionando em ambos os sentidos (para frente e para trás), e ainda possibilita a criação hierárquica dos requisitos, de forma extremamente eficiente.
+
+São implementados os seguintes atributos de requisitos de forma nativa:
+
+\begin{itemize}
+  \item Fonte
+  \item Prioridade
+  \item Comentários
+  \item Risco
+  \item Prazo
+\end{itemize}
+
+Os demais atributos podem ser implementados por marcadores ou dentro da descrição do requisito, que permite a inserção de texto formatado.
 
 A falta de alguns componentes gráficos como \emph{kanban} e \emph{backlog}, que seriam interessantes no contexto adaptativo fazem falta, mas podem ser facilmente substituídos por ferramentas que se integram ao Jama.
+
+Uma interessante característica do Jama é permitir a criação de requisitos personalizados, o que possibilita a criação de temas de investimentos dentro da ferramenta.
 
 A ferramenta apresenta algumas informações gerais sobre o projeto, dentre eles: risco da iteração e gráfico de priorização de estórias. E uma das grandes vantagens da ferramenta é o eficiente gerenciador de revisão, que permite comparar as edições realizadas pelos usuários nas estórias, épicos, e etc, permitindo a restauração dos documentos para uma versão anterior.
 
@@ -39,6 +54,7 @@ A ferramenta apresenta algumas informações gerais sobre o projeto, dentre eles
   \item Suporte à múltiplas equipes e papéis
   \item Interface prática, amigável e organizada
   \item Rastreabilidade dos requisitos
+  \item Implementação nativa de alguns atributos de requisitos
   \item Diversas opções de estatísticas em forma de gráfico sobre o projeto
   \item Suporte nativo a: \emph{releases}, epicos, funcionalidades, estórias de usuário, iteração, pontos da estória, casos de teste, \emph{kanban} e \emph{backlog}
 \end{itemize}
@@ -46,6 +62,18 @@ A ferramenta apresenta algumas informações gerais sobre o projeto, dentre eles
 O Rally se destaca por sua interface funcional e prática, sendo bastante informativo e organizada. Pelo fato de possuir um kanban com cinco estágios, diversas opções gráficas para exibir o progresso do projeto, além de muitas informações relevantes para o gerenciamento do projeto e requisitos, a ferramenta se mostra poderosa e focada em projetos que usem abordagens adaptativas.
 
 A rastreabilidade funciona muito bem quando se vai de épico  para estórias de usuários, mas o caminho contrário não é possível, pois há uma ligação apenas para os componentes filhos. No entanto isso pode ser contornado usando algumas das funções de visualização gráfica disponíveis na ferramenta.
+
+São implementados os seguintes atributos de requisitos de forma nativa:
+
+\begin{itemize}
+  \item Comentários
+  \item Status
+  \item Prazo
+  \item Nível de teste
+  \item Esforço
+\end{itemize}
+
+Os demais atributos podem ser implementados por marcadores, mas a visualização desses marcadores não é tão prática, também podem ser implementados dentro da descrição do requisito, que permite a inserção de texto formatado.
 
 Há apenas a opção de exportar os dados para arquivos PDFs, mas de forma individual, o que não se mostra muito útil. A possibilidade de se inserir arquivos anexos e a liberdade de criar estórias de usuário utilizando um editor de texto avançado permite uma flexibilização interessante das descrições das estórias.
 
@@ -69,12 +97,25 @@ casos de testes e \emph{features}.
 
 A vantagem desse sistema é que tudo funciona em forma de \emph{templates}, ou seja, é possível personalizar os itens para assumirem a forma de épicos, mas tudo acontece como se estivesse produzindo um documento de texto. Mas não é por isso que a ferramenta deixa de apresentar recursos importantes como status, prioridade, rastreabilidade com ligações entre requisitos de forma bidirecional e histórico de versão, inclusive com opções de comparação entre as revisões, mas sem uma opção específica para a restauração do documento para uma versão anterior.
 
-O Polarion é uma ferramenta versátil, que pode coibir os desavisados que ainda temem editar requisitos em forma de documentos de texto, mas basta dar uma olhada mais aprofundada para perceber que a ferramenta cumpre com os requisitos que qualquer gerenciador de requisitos deva possuir.
+São implementados os seguintes atributos de requisitos de forma nativa:
+
+\begin{itemize}
+  \item Fonte
+  \item Prazo
+  \item Prioridade
+  \item Comentários
+\end{itemize}
+
+Os demais atributos podem ser implementados dentro do corpo do requisito, que é um documento, onde praticamente tudo é passível de personalização. No entanto isso se mostra um processo complicado.
+
+O Polarion é uma ferramenta versátil, que pode coibir os desavisados que ainda temem editar requisitos em forma de documentos de texto, mas basta dar uma olhada mais aprofundada para perceber que a ferramenta cumpre com os requisitos que qualquer gerenciador de requisitos deva possuir, possuindo uma personalização incrível, embora igualmente trabalhosa.
 
 \section{Ferramenta Escolhida e Justificativa}
 
-De todas as ferramentas testadas era esperado que o Rally fornecesse os componentes necessários para sua adoção como ferramenta de gerenciamento de requisitos, devido a sua forte integração com a abordagem adaptativa, no entanto, dois fatos considerados de grande importância acabaram tirando a ferramenta, inicialmente preferida, da disputa: a impossibilidade de rastrear bidirecionalmente os requisitos de forma fácil, e também a incapacidade de comparar e restaurar as modificações realizadas nos requisitos.
+De todas as ferramentas testadas era esperado que o Rally fornecesse os componentes necessários para sua adoção como ferramenta de gerenciamento de requisitos, devido a sua forte integração com a abordagem adaptativa, no entanto, dois fatos considerados de grande importância acabaram tirando a ferramenta, inicialmente preferida, da disputa: a impossibilidade de rastrear bidirecionalmente os requisitos de forma fácil, e também a incapacidade de comparar e restaurar as modificações realizadas nos requisitos. E embora a ferrramenta apresente muitos atributos de requisitos implementados por /emph{default}, os demais atríbutos não são tão úteis quando implementados via marcadores, sendo difíceis de gerenciar.
 
-A Polarion mostrou-se muito eficiente nas funções fundamentais de gerenciamento de requisitos, surpassando as expectativas e até mesmo mostrando-se mais indispensável que a ferramenta Rally. No entanto, por ser pouco adaptada aos métodos ágeis, ter uma forma de gerenciamento de requisitos considerada arcaica, e principalmente por não ter características interessantes e úteis presentes nas outras ferramentas, também optou-se por não utilizá-la.
+A Polarion mostrou-se muito eficiente nas funções fundamentais de gerenciamento de requisitos, surpassando as expectativas e até mesmo mostrando-se mais indispensável que a ferramenta Rally. Seu alto poder de personalização é algo notável, mas essa customização é custosa e demasiadamente trabalhosa, tendo seus benefícios anulados. Ainda pesam contra a ferramenta: o fato de não ter ser nativamente adaptada aos métodos ágeis; ter uma forma de gerenciamento de requisitos considerada arcaica; e principalmente por não ter características interessantes e úteis presentes nas outras ferramentas. Por esses motivos também optou-se por não utilizá-la.
 
-Sendo assim, optou-se pela ferramenta Jama. Poderia-se dizer que foi a escolha que sobrou, mas isso não faria jus ao que a ferramenta demonstrou. Sem dúvida, é a ferramenta mais completa entre as testadas, e embora não tenha uma interface tão agradável ou funcionalidades tão chamativas quanto as que são apresentadas na ferramenta Rally, possui o que é essencial, no que as demais ferramentas sempre deveriam fornecer: fácil e sólida rastreabilidade. A Jama, além de tudo é muito preparada para o contexto ágil e possui integração nativa com ferramentas que extendem suas funcionalidades para outros contextos dentro do projeto de software, não deixando a equipe presa à ferramenta para gerência de outras coisas.
+Sendo assim, optou-se pela ferramenta Jama. Poderia-se dizer que foi a alternativa restante, mas isso não faria jus ao que a ferramenta demonstrou. Sem dúvida, é a ferramenta mais completa entre as testadas, e embora não tenha uma interface tão agradável ou funcionalidades tão chamativas quanto as que são apresentadas na ferramenta Rally, possui o que é essencial, no que as demais ferramentas sempre deveriam fornecer: fácil e sólida rastreabilidade, com criação hierárquica de requisitos, e efetiva implementação não-nativa de atríbutos de requisitos.
+
+A Jama, além de tudo é muito preparada para o contexto ágil, e possui integração nativa com ferramentas que extendem suas funcionalidades para outros contextos dentro do projeto de software, não deixando a equipe presa à ferramenta para gerência de outras coisas.
