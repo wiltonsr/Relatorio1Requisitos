@@ -49,16 +49,18 @@ Consistindo do Product Manager e do Release Train Engineer, o papel de Release M
 No contexto do grupo 1, o Release Management será feito somente por quem atua no papel de \emph{Release Train Engineer}, no caso, os alunos de Requisitos. O papel não será compartilhado com os alunos de MPR pois, como já dito, pratica atividades com mais relação com a disciplina de Requisitos. Será um papel flutuante, onde cada semana um aluno do grupo terá o papel de ser /emph{release manager}.
 
 \subsubsection{Business Owners}
-Pequeno grupo de \emph{stakeholders} de grande confiança, que dispõe de capacidade de administração, responsáveis pela gestão, qualidade, implantação e desenvolvimento de software \cite{safesite001}. No contexto do projeto, diferente da bibliografia, eles não serão responsáveis pelo desenvolvimento e implantação do \emph{software}, e será praticado pelos alunos de MPR.
+Pequeno grupo de \emph{stakeholders} de grande confiança, que dispõe de capacidade de administração, responsáveis pela gestão, qualidade, implantação e desenvolvimento de software \cite{safesite001}. No contexto do projeto, diferente da bibliografia, eles não serão responsáveis pelo desenvolvimento e implantação do \emph{software}, e será praticado pelo dono do contexto (um aluno de MPR).
 
-%\subsubsection{Release Train Engineer}
+\subsubsection{Release Train Engineer}
+O RTE é quase que o facilitador do Nível de Programa. Normalmente tem \emph{background} na área de gerência de programa, projeto ou desenvolvimento \cite{safesite005}. No contexto do grupo 1, o RTE funcionará como \emph{"O Scrum Master do Nível de Programa"}, além de ajudar a escrever as \emph{features} junto com o PO, e gerenciar o Nível de Programa (cuidará do \emph{backlog} de programa), também será o papel que documentará as \emph{features} no Documento de Visão e cuidará do \emph{roadmap}. Este papel será composto de todos os alunos de Requisitos.
+
 %\subsubsection{UX}
 %\subsubsection{Shared Resources}
 
 \subsection{Papéis no Nível de Time}
 
 \subsubsection{Product Owner}
-Responsável por representar o interesse de todos os envolvidos no projeto, faz parte do time e esta junto no dia-a-dia dos desenvolvedores e testadores, elaborando as estórias de usuário e ajudando o time a alcançar seus objetivos \cite[p. 47-48]{safe001} Além de ser um membro que possui visão do modelo de negócio. No contexto do grupo 1, o \emph{product owner} não irá escrever as estórias. O papel de PO será delegado a um integrante de MPR que deverá validar e analisar a escrita das estórias que será feita pelos integrantes do grupo de Requisitos.
+Responsável por representar o interesse de todos os envolvidos no projeto, faz parte do time e esta junto no dia-a-dia dos desenvolvedores e testadores, elaborando as estórias de usuário e ajudando o time a alcançar seus objetivos \cite[p. 47-48]{safe001} Além de ser um membro que possui visão do modelo de negócio. No contexto do grupo 1, o \emph{product owner} irá ajudar o time de desenvolvimento a escrever as estórias. O papel de PO será delegado a integrantes de MPR, que deverão validar e analisar a escrita das estórias que será feita pelos integrantes do grupo de Requisitos.
 
 \subsubsection{Scrum Master}
 É responsável por facilitar o progresso do time (ajudando assim a se alcançar o objetivo final), liderar os esforços do time, reforçar as regras do processo ágil e eliminar impedimentos \cite[p. 47-48]{safe001}. No contexto do grupo 1, o papel de \emph{Scrum Master} irá flutuar durante o projeto, e será escolhido um integrante do grupo de Requisitos para ser \emph{Scrum Master} a cada \emph{sprint}. Essa rotatividade irá fazer com que todos os integrantes aprendam a ser um \emph{Scrum Master}, e, só é necessário um por \emph{sprint}.
@@ -78,21 +80,71 @@ Modelagem geral de atividades:
 \end{figure}
 
 Lista de atividades:
-\begin{itemize}
-  \item Elicitar requisitos com o cliente: no contexto do grupo 1, atividade feita pelo \emph{epic owner} (Requisitos) e cliente (MPR), consiste em entender de maneira macro o contexto e as necessidades do projeto.
-  \item Analisar resultados da elicitação: Atividade feita pelos \emph{epic owners}, consiste em se analisar os insumos fornecidos pelo cliente na atividade anterior, buscando-se soluções plausíveis e pontos de vista diferentes.
-  \item Negociação com o cliente dos resultados levantados: feita entre \emph{epic owner} e cliente, consiste em expor os pontos de vista descobertos na análise, tentando encontrar um ponto comum entre a visão do cliente e da equipe.
-  \item Documentar critérios e requisitos: documentar de maneira formal as necessidades e descrições necessárias no projeto conseguidos na negociação, tudo em um nível bem macro. Feito pelo \emph{epic owner}, guiará a visão do épico.
-  \item Identificar \emph{features}: consiste em identificar as possíveis \emph{features} do sistema. Feita em conjunto entre o \emph{Product Owner} (que, como já dito, no contexto do grupo 1 terá as tarefas do PM) e o RTE (alunos de Requisitos), será salva no \emph{backlog} de programa.
-  \item Propor e escrever features: com as possíveis \emph{features} identificadas, se chega a um ponto comum se tal \emph{feature} deve estar presente ou não. Se sim, serão escritas e salvas. Feito em conjunto entre o PO e o RTE.
-  \item Documentar \emph{features} no Documento de Visão: Feito pelo RTE (alunos de Requisitos), consiste em documentar as \emph{features} levantadas no Documento de Visão.
-  \item Preencher \emph{backlog} de programa: consiste em documentar o conjunto de \emph{features} disponíveis no \emph{backlog} de programa, dando assim uma melhor visão para o time de qual solução pode ser implementada em determinado momento. Feita pelo Release Manager.
-  \item Planejar \emph{release}: consiste em definir quais \emph{features} serão implementadas na \emph{release}, períodos, visões, etc. Feita em conjunto entre os papéis de Release Manager, PO e RTE.
-  \item Refinamento do \emph{backlog} de programa: Consiste principalmente em dizer o estado atual de cada \emph{feature} que deve ser implementada na \emph{release} atual. Tarefa feita pelo Release Manager.
-  \item Escrever estórias de usuário: consiste em documentar as estórias de usuário advindas de uma determinada \emph{feature}. Feita em conjunto entre PO, Desenvolvedores e Scrum Master.
-  \item Alimentar \emph{backlog} de time: consiste em documentar e armazenar o conjunto de estórias no backlog, garantindo também sua rastreabilidade. Feito pelo Scrum Master.
-  \item Planejar \emph{sprint}: Feito em conjunto entre PO, Desenvolvedores e Scrum Master, consiste em planejar o que será implementado na \emph{sprint} seguinte, quem fica com determinada tarefa, pontos falhos da \emph{sprint} passada, etc.
-  \item Desenvolver e testar estórias: tarefa feita pelos desenvolvedores e testadores, consiste em desenvolver determinada estória de usuário, testar e validar com base nos critérios de aceitação.
-  \item Criar e entregar \emph{build}: Feita pelos desenvolvedores, consiste em empacotar o desenvolvimento das estórias feitas numa determinada sprint, transformar em produto, e entregar este incremento ao usuário.
-\end{itemize}
+\subsection{Elicitar requisitos com o cliente}
+No contexto do grupo 1, atividade feita pelo \emph{epic owner} (Requisitos) e cliente (MPR), consiste em entender de maneira macro o contexto e as necessidades do projeto.
 
+\subsection{Analisar resultados da elicitação}
+Atividade feita pelos \emph{epic owners}, consiste em se analisar os insumos fornecidos pelo cliente na atividade anterior, buscando-se soluções plausíveis e pontos de vista diferentes.
+
+\subsection{Documentar Tema de Investimento}
+Atividade feita pelos \emph{epic owners}, consiste em se documentar o tema de investimento que guiará a instituição.
+
+\subsection{Identificar épico}
+Atividade feita pelos \emph{epic owners} e \emph{business owner}, consiste em se identificar épicos nas necessidades e descrições dadas do problema até o momento.
+
+\subsection{Preparar épico}
+Atividade feita pelos \emph{epic owners}, consiste em preparar formalmente um determinado épico identificado.
+
+\subsection{Apresentar épico}
+Atividade feita pelos \emph{epic owners}, consistido em apresentar o épico para o \emph{business owner}.
+
+\subsection{Decisão a respeito do épico}
+Atividade feita pelo \emph{business owner}, consiste em dar uma decisão final sobre um épico apresentado. A decisão pode ser de aprovação ou reprovação de um determinado épico.
+
+\subsection{Documentar épico}
+Atividade feita pelos \emph{epic owners}, consiste em se documentar determinado épico.
+
+\subsection{Negociação com o cliente dos resultados levantados}
+Feita entre \emph{epic owner} e cliente, consiste em expor os pontos de vista descobertos na análise, tentando encontrar um ponto comum entre a visão do cliente e da equipe.
+
+\subsection{Documentar critérios e requisitos}
+Documentar de maneira formal as necessidades e descrições necessárias no projeto conseguidos na negociação, tudo em um nível bem macro. Feito pelo \emph{epic owner}, guiará a visão do épico.
+
+\subsection{Identificar \emph{features}}
+Consiste em identificar as possíveis \emph{features} do sistema. Feita em conjunto entre o \emph{Product Owner} (que, como já dito, no contexto do grupo 1 terá as tarefas do PM) e o RTE (alunos de Requisitos).
+
+\subsection{Propor e escrever features}
+Com as possíveis \emph{features} identificadas, se chega a um ponto comum se tal \emph{feature} deve estar presente ou não. Se sim, serão escritas e salvas. Feito em conjunto entre o PO e o RTE.
+
+\subsection{Documentar \emph{features} no Documento de Visão}
+Feito pelo RTE (alunos de Requisitos), consiste em documentar as \emph{features} levantadas no Documento de Visão.
+
+\subsection{Preencher \emph{backlog} de programa}
+Consiste em documentar o conjunto de \emph{features} disponíveis no \emph{backlog} de programa, dando assim uma melhor visão para o time de qual solução pode ser implementada em determinado momento. Feita pelo Release Manager.
+
+\subsection{Planejar \emph{release}}
+Consiste em definir quais \emph{features} serão implementadas na \emph{release}, períodos, visões, etc. Feita em conjunto entre os papéis de Release Manager, PO e RTE.
+
+\subsection{Documentar e gerenciar \emph{roadmap}}
+Feita pelo RTE, consiste em documentar, gerenciar e criar (se necessário) o \emph{roadmap} da \emph{release}.
+
+\subsection{Refinamento do \emph{backlog} de programa}
+Consiste principalmente em dizer o estado atual de cada \emph{feature} que deve ser implementada na \emph{release} atual. Tarefa feita pelo Release Manager.
+
+\subsection{Escrever estórias de usuário}
+Consiste em documentar as estórias de usuário advindas de uma determinada \emph{feature}. Feita em conjunto entre PO, Desenvolvedores e Scrum Master.
+
+\subsection{Alimentar \emph{backlog} de time}
+Consiste em documentar e armazenar o conjunto de estórias no backlog, garantindo também sua rastreabilidade. Feito pelo Scrum Master.
+
+\subsection{Planejar \emph{sprint}}
+Feito em conjunto entre PO, Desenvolvedores e Scrum Master, consiste em planejar o que será implementado na \emph{sprint} seguinte, quem fica com determinada tarefa, pontos falhos da \emph{sprint} passada, etc.
+
+\subsection{Desenvolver e testar estórias}
+Tarefa feita pelos desenvolvedores e testadores, consiste em desenvolver determinada estória de usuário, testar e validar com base nos critérios de aceitação.
+
+\subsection{Criar e entregar \emph{build}}
+Feita pelos desenvolvedores, consiste em empacotar o desenvolvimento das estórias feitas numa determinada sprint, transformar em produto, e entregar este incremento ao usuário.
+
+\subsection{Validar estória}
+Feita pelo PO, consiste em dar um veredito sobre determinada estória implementada e testada. Será feita com base nos critérios de aceitação.
